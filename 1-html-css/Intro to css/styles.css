@@ -1,0 +1,88 @@
+/* 
+Ctrls + / to create a commet, they can also span multiple lines
+
+*/
+
+/* 
+    List of CSS selector 
+        -Element Selector: is going to select Alll instances of a
+        given tag from our HTML page
+*/
+
+P{
+    color: purple;
+}
+
+body {
+    margin: 0;
+    background: url(https://images.unsplash.com/photo-1714547509046-0cf60126f331?q=80&w=2832&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D) 
+    no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 80vh;
+    height: fit-content;
+}
+/* you can also taget multiple elements via css */
+
+/* In order to style multiple elements with a custome name you can use classes.
+Denoted by a "." */
+.header {
+    text-align: center;
+}
+
+.wrapper {
+    background-color:  (0, 0, 0, 7);
+    /* Em is relative unit in css. 1em= the default fonts size of the parent
+    in html */
+    padding: .7em;
+    margin-inline: 1em ;
+    border-radius: .2em;
+}
+/* to target individual item, and maintain uniqueness in its styling, use an Id
+denoted by "# */
+
+#unique {
+    color:olivedrab;
+    text-decoration: underline overline;
+    
+}
+
+nav {
+    text-align: center;
+    background-color: teal;
+    padding: 1em;
+ }
+ 
+ .btn {
+    color: aqua;
+
+ }
+
+ /* you can bring more specificity to your selectors by chaining them together.
+ This will taget all classes of .btn that exist in nav */
+ nv .btn {
+    color:aqua;
+ }
+
+ /* The box model */
+
+ .box p {
+    border: .3em solid limegreen
+
+ }
+
+ h3 { 
+    color: aqua;
+    background-color: black; 
+ }
+ #oos {
+    color: yellow;
+ }
+ .oos-class {
+    color:blue;
+ }
+ h3{
+    color: purple;
+ }
+
+

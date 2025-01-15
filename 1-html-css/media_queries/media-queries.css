@@ -1,0 +1,102 @@
+/* 
+    Responsive units of measurement
+        - % : percentage
+        - vw : viewport width
+        - vh : viewport height
+        - em/rem: em: parents default font size, rem: root element font size (default 16px). em, acts as multiplier for the default font size. 2em = 32px
+
+
+    Media Queries
+
+
+        - ex: 
+            @media screen { 
+                div {
+                    background-color:blue;
+                }   
+            }
+
+
+            AND 
+            @media screen and (min-width: 750px){ 
+                div {
+                    background-color:blue;
+                }   
+            }
+
+            OR
+
+            @media screen, (min-width: 750px) { 
+                div {
+                    background-color:blue;
+                }   
+            }
+
+
+            Build with Mobile design first
+            
+            */
+            
+/* Target a samsung s8+ make sure that we are in landscape mode */
+
+@media screen and (min-width: 640px) and (max-width: 740px) and (orientation: landscape){
+    /* body{
+        background-color: blue;
+    } */
+
+    nav ul li{
+        font-size: 1.5em;
+    }
+
+    footer{
+        padding-bottom: 1em;
+        font-size: 1.2em;
+    }
+}
+
+
+/* General Media Queries */
+@media (max-width:480px){
+    /* Target elements that can be easily identified to check query*/
+    /* body{
+        background-color: blue;
+    } */
+
+    /* global */
+    p {
+        font-size: 16pt;
+        text-align: center;
+    }
+
+    h1{ 
+        text-align: center;
+    }
+
+    nav ul {
+        padding: 0;
+        justify-content: center;
+    }
+
+    nav ul li {
+        font-size: x-large;
+        margin: 0 1.1em;
+    }
+
+    .desc {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .desc > p {
+        padding: 1em 1em;
+        /* margin: 0; */
+    }
+
+    footer {
+        font-size: x-large;
+    }
+    
+}
+
+
+
