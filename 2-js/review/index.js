@@ -267,6 +267,59 @@ for (let number = 1; number <=100; number++) {
   } 
 }
 
+/* 
+    ! Pythagorean Theorem Challenge
+    * right angle triangle has three sides
+    * the longest side c is calculated by taking the formula
+    *    - a**2 + b**2 = c**2
+    * Create a function that takes the two triangle sides
+    * Returns the hypotenuse
+    ? HINT: c = sqrt(a **2 + b ** 2)
+    ? Can use Math library for a sq root function
+*/
+
+function randomGuesser(min, max, smart) {
+  if (smart) {
+    return Math.floor((Math.random() * max) / 2);
+  } else {
+    return Math.floor(Math.random() * max + min);
+  }
+}
+
+let min = 1;
+let max = 5;
+let smart = false;
+
+//  min = computer's guess + 1
+//  max = computer's guess - 1
+
+max = 3;
+
+console.log(randomGuesser(min, max, smart));
+
+function fullName(first, last) {
+  return first + " " + last;
+}
+
+
+console.log(fullName("Salo", "Vasquez"));
+console.log(fullName("Amit", "Mangat"));
+
+function tradFunc(x, y) {
+  return x + y;
+}
+
+console.log(tradFunc(2, 3));
+
+const addNumbers = (x, y) => x + y
+
+
+console.log(addNumbers(5, 3))
+
+const arrowFuncSingleArg = x => x+=1
+
+
+console.log(arrowFuncSingleArg(5)) // 6
 
 
 
@@ -288,3 +341,20 @@ for (let number = 1; number <=100; number++) {
     ? HINT: c = sqrt(a **2 + b ** 2)
     ? Can use Math library for a sq root function
 */
+
+
+
+function randomGuesser (min,max) {
+  return Math.floor(Math.random() * max + min)
+}
+
+//let min =1;
+//let max = 5;
+
+
+// min = computer's guess + 1
+// max = computer's guess -1
+
+max = 3
+
+console.log(randomGuesser(min,max));
