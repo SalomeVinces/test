@@ -10,7 +10,7 @@
 
 
     Structure: 
-        Fro (initial expr; condition; incr/dec expression) {
+        For (initial expr; condition; incr/dec expression) {
         ... code to run on each iteration
         }
 
